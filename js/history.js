@@ -4,7 +4,7 @@ let currentGeolocation;
 let selectedTempUnit=document.getElementsByName("tempRadio");
 const startDate=new Date(new Date().getTime()-7*24*60*60*1000).toISOString().split('T')[0];
 const endDate=new Date(new Date().getTime()-1*24*60*60*1000).toISOString().split('T')[0];
-const apiUrlHistory = "http://api.weatherapi.com/v1/history.json?" + `&key=${apiKey}` + `&end_dt=` + endDate + `&dt=` + startDate;
+const apiUrlHistory = "https://api.weatherapi.com/v1/history.json?" + `&key=${apiKey}` + `&end_dt=` + endDate + `&dt=` + startDate;
 let weatherContent = document.getElementById("weatherContent");
 
 weatherContent.style.display = "none";
