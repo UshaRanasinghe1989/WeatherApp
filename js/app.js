@@ -1,6 +1,6 @@
 
 const apiKey = "43dbb7d2bee14da6b8d193208242303";
-const apiUrlForecast = "http://api.weatherapi.com/v1/forecast.json?"+ `key=${apiKey}` + `&days=4`;
+const apiUrlForecast = "https://api.weatherapi.com/v1/forecast.json?"+ `key=${apiKey}` + `&days=4`;
 
 let q;
 let currentGeolocation;
